@@ -1,0 +1,149 @@
+@import "./global.scss";
+
+body {
+  background: #4f318b;
+  background-image: linear-gradient(to right, #4f318b, #68348c, #7e378d, #923b8d, #a4418c);
+  .wrapper {
+    padding: 50px;
+    header {
+      .logo {
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    .border-design {
+      .design {
+        background: rgba(235, 92, 161, 0.2);
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        position: fixed;
+        img {
+          width: 55px;
+          position: absolute;
+        }
+        &.top-left {
+          left: -100px;
+          top: -100px;
+          img {
+            left: 110px;
+            top: 110px;
+          }
+        }
+        &.top-right {
+          right: -100px;
+          top: -100px;
+          img {
+            right: 110px;
+            top: 110px;
+          }
+        }
+        &.bottom-left {
+          left: -100px;
+          bottom: -100px;
+          img {
+            left: 110px;
+            bottom: 110px;
+          }
+        }
+        &.bottom-right {
+          right: -100px;
+          bottom: -100px;
+          img {
+            right: 110px;
+            bottom: 110px;
+          }
+        }
+      }
+    }
+    .content {
+      font-family: 'Berkshire Swash', cursive;
+      text-align: center;
+      color: #fff;
+      .names {
+        .bride {
+            display: inline-block;
+            position: relative;
+          img {
+            position: absolute;
+            top: 20px;
+            right: -60px;
+            width: 60px;
+          }
+        }
+        .groom {
+          display: inline-block;
+          position: relative;
+          .info {
+            position: absolute;
+            bottom: -50px;
+            right: -200px;
+            border-radius: 100%;
+            width: 150px;
+            height: 150px;
+            background: #A4418C;
+            padding: 5px;
+            &:before {
+              content: '';
+              width: 0;
+              height: 0;
+              border-top: 40px solid transparent;
+              border-bottom: 10px solid transparent;
+              border-right: 40px solid #A4418C;
+              position: absolute;
+              left: -10px;
+              top: 5px;
+              transform: rotate(22deg);
+            }
+            h5 {
+              font-size: 25px;
+              line-height: 35px;
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              font-weight: normal;
+            }
+          }
+        }
+        h1 {
+          font-size: 130px;
+          line-height: 140px;
+          margin: 20px 0;
+          font-weight: normal;
+        }
+        h3 {
+          font-size: 100px;
+          line-height: 100px;
+          color: #E4D677;
+          font-weight: normal;
+        }
+      }
+    }
+    footer {
+      color: #fff;
+      text-align: center;
+      margin-top: 100px;
+      .desc {
+        margin: 30px 0;
+        h5 {
+          font-family: 'Noto Sans', sans-serif;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: normal;
+        }
+        h3 {
+          font-family: 'Berkshire Swash', cursive;
+          font-size: 40px;
+          line-height: 60px;
+          font-weight: normal;
+        }
+        &.vanue {
+          h3 {
+            font-size: 26px;
+            line-height: 35px;
+          }
+        }
+      }
+    }
+  }
+}
