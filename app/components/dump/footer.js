@@ -9,7 +9,7 @@ const Footer = () => {
         </div>
         <div className="desc vanue">
           <h5>Venue</h5>
-          <h3>jeevansathi marriage hall <br/> Sultanpur U.P.</h3>
+          <h3>Jeevansathi marriage hall <br/> Sultanpur U.P.</h3>
         </div>
       </footer>
     )
