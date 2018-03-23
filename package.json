@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "cross-env NODE_ENV=development parcel ./app/index.html",
-    "start": "cross-env NODE_ENV=production parcel build ./app/index.html --public-url ./ --out-dir ./",
+    "start": "cross-env NODE_ENV=development parcel ./app/index.html",
+    "build": "cross-env NODE_ENV=production parcel build ./app/index.html --public-url ./ --out-dir ./",
     "clean": "rm -rf ./.cache ./public/"
   },
   "author": "Amit Mishra <amitmishra009v@gmail.com> (http://amituidev.github.io/portfolio)",
